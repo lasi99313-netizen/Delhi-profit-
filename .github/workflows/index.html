@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Profit Digital Store</title>
+    <style>
+        :root { --blue: #003399; --green: #28a745; --white: #ffffff; --dark: #1a1a1a; --grey: #f4f7f6; --red: #e74c3c; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background-color: var(--grey); color: #333; line-height: 1.6; }
+        header { background: var(--white); padding: 20px 5%; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .logo { max-height: 100px; display: block; margin: 0 auto 10px; border-radius: 10px; }
+        header h1 { margin: 0; color: var(--blue); font-size: 1.8rem; }
+        .container { max-width: 1100px; margin: auto; padding: 20px; }
+        .section-title { text-align: center; margin: 40px 0 20px; color: var(--blue); font-size: 2rem; border-bottom: 3px solid var(--green); display: inline-block; width: 100%; padding-bottom: 10px; }
+        .product-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .card { background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center; border: 1px solid #eee; display: flex; flex-direction: column; }
+        .card img { width: 100%; height: 180px; object-fit: contain; padding: 10px; background: #fff; }
+        .card-content { padding: 15px; flex-grow: 1; }
+        .price { margin: 10px 0; font-weight: bold; }
+        .old-price { text-decoration: line-through; color: #888; font-size: 0.9rem; margin-right: 5px; }
+        .new-price { color: var(--red); font-size: 1.3rem; }
+        .inner-circle { background: var(--white); border: 3px solid var(--green); border-radius: 20px; padding: 30px; margin: 50px 0; text-align: center; }
+        .features-list { text-align: left; max-width: 550px; margin: 20px auto; display: inline-block; padding: 0; }
+        .features-list li { margin-bottom: 10px; list-style: none; padding-left: 30px; position: relative; }
+        .features-list li::before { content: '✅'; position: absolute; left: 0; }
+        .btn { display: block; padding: 12px; border-radius: 8px; text-decoration: none; font-weight: bold; margin-top: 10px; transition: 0.3s; text-align: center; border: none; cursor: pointer; }
+        .btn-blue { background: var(--blue); color: white; }
+        .btn-green { background: var(--green); color: white; }
+        .btn-outline { border: 2px solid var(--blue); color: var(--blue); background: transparent; }
+        footer { background: var(--dark); color: white; padding: 30px; text-align: center; margin-top: 50px; }
+        @media (max-width: 600px) { .product-grid { grid-template-columns: 1fr 1fr; gap: 10px; } .card img { height: 140px; } }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="https://i.ibb.co/q3cQH7bJ/In-Shot-20260101-045242323.jpg" alt="Daily Profit Logo" class="logo">
+    <h1>Daily Profit Digital Store</h1>
+</header>
+
+<div class="container">
+    
+    <h2 class="section-title">Premium Paid Products</h2>
+    <div class="product-grid">
+        <div class="card">
+            <img src="https://i.ibb.co/3yk0p9cx/c6dda7ab-e047-44d9-8700-682401f10154.jpg" alt="Lightroom">
+            <div class="card-content">
+                <h3>8000+ Lightroom Presets</h3>
+                <div class="price"><span class="old-price">Rs 999</span> <span class="new-price">Rs 499</span></div>
+                <a href="https://drive.google.com/drive/folders/18c-V63sDL-1B6o1qB7dGYsjmIxZvNVmv" class="btn btn-blue">See Details</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://i.ibb.co/VYBNy1QX/cb5f095d-5dbe-4952-a653-867dd6f5ba75.jpg" alt="PixelLab">
+            <div class="card-content">
+                <h3>PixelLab Master Assets</h3>
+                <div class="price"><span class="old-price">Rs 999</span> <span class="new-price">Rs 499</span></div>
+                <a href="https://drive.google.com/drive/folders/1fJFQaSFO_yVPWmaIGA_t_e2MyGT_gXcL" class="btn btn-blue">See Details</a>
+            </div>
+        </div>
+
+        <div class="card" style="opacity: 0.8;">
+            <img src="https://i.ibb.co/fV8DGYZ3/7f326f35-2bf2-4159-9e16-f9ac47eb3a0d.jpg" alt="Audio Books">
+            <div class="card-content"><h3>Millionaire Audio Books</h3><div class="price">Coming Soon</div><button class="btn" style="background:#ccc;" disabled>Coming Soon</button></div>
+        </div>
+
+        <div class="card" style="opacity: 0.8;">
+            <img src="https://i.ibb.co/Kc4cQNvM/Whisk-b0c0d7d26aa0621b3534f2cf7fc28850dr.png" alt="Zero Se Kamai">
+            <div class="card-content"><h3>Zero Se Kamai E-Book</h3><div class="price">Coming Soon</div><button class="btn" style="background:#ccc;" disabled>Coming Soon</button></div>
+        </div>
+    </div>
+
+    <div class="inner-circle">
+        <h2 style="color: var(--blue);">🚀 Inner Circle (Earn & Learn)</h2>
+        <ul class="features-list">
+            <li>Facebook Ads Mastery: Zero se Sales nikalne ka tarika</li>
+            <li>AI Content Creation: Viral content banana seekhein</li>
+            <li>Professional Mobile Editing Course</li>
+            <li>60% Reselling Profit Commission</li>
+        </ul>
+        <div class="price">
+            <span class="old-price">Rs 499</span> <span class="new-price">Rs 299</span>
+            <span style="background:var(--green); color:white; padding:3px 8px; border-radius:5px; font-size:0.8rem;">40% OFF</span>
+        </div>
+        <a href="https://forms.gle/mmmVixsFLQLRsECW9" class="btn btn-green" style="max-width: 300px; margin: auto;">Join Inner Circle</a>
+    </div>
+
+    <h2 class="section-title">Free Digital Gifts</h2>
+    <div class="product-grid">
+        <div class="card">
+            <img src="https://i.ibb.co/5XdQMkPB/b45894fc-ecad-4398-912d-c6da9886d11a.jpg" alt="YouTube Kit">
+            <div class="card-content"><h3>YouTube Success Kit</h3><a href="https://whatsapp.com/channel/0029VawbFEbBFLgcRzGSpX3b" class="btn btn-outline">Click Here / Get Now</a></div>
+        </div>
+        <div class="card">
+            <img src="https://i.ibb.co/nqSQBdv8/free1.jpg" alt="Instagram Posts">
+            <div class="card-content"><h3>Instagram Templates</h3><a href="https://whatsapp.com/channel/0029VawbFEbBFLgcRzGSpX3b" class="btn btn-outline">Click Here / Get Now</a></div>
+        </div>
+        <div class="card">
+            <img src="https://i.ibb.co/WW5mq82n/6d38ecfb-14ab-4a5d-8412-e76e526cafd1.jpg" alt="Graphic Data">
+            <div class="card-content"><h3>675 GB Graphic Data</h3><a href="https://whatsapp.com/channel/0029VawbFEbBFLgcRzGSpX3b" class="btn btn-outline">Click Here / Get Now</a></div>
+        </div>
+        <div class="card">
+            <img src="https://i.ibb.co/jkZFZn98/c545ec5b-64b5-4f29-83db-669fe4d8c9c8.jpg" alt="Premium Apps">
+            <div class="card-content"><h3>200+ Premium Apps</h3><a href="https://whatsapp.com/channel/0029VawbFEbBFLgcRzGSpX3b" class="btn btn-outline">Click Here / Get Now</a></div>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>Support: 03423908693</p>
+    <p>&copy; 2026 Daily Profit Digital Store</p>
+</footer>
+
+</body>
+</html>
